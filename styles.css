@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&family=Exo+2:wght@500&display=swap');
+
+* {font-family: 'Exo 2', sans-serif;}
+html { font-size: calc(0.9em + 0.2vw) }
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, nav a, footer {font-family: 'Jura', sans-serif; color: white;}
+
+header {
+  padding: 40px;
+  text-align: center;
+	background: #434d66; /* Для браузеров, которые не поддерживают градиенты */
+	/*background: -webkit-linear-gradient(#434d66, #7b8dbb); /* Для Safari 5.1 - 6.0 */
+	/*background: -o-linear-gradient(#434d66, #7b8dbb); /* Для Opera 11.1 - 12.0 */
+	/*background: -moz-linear-gradient(#434d66, #7b8dbb); /* Для Firefox 3.6 - 15 */
+	/*background: linear-gradient(#434d66, #7b8dbb); /* Стандартный синтаксис */
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 1px;
+	border-bottom-right-radius: 1px;
+  color: #b0d9b4;
+}
+
+header h1 {
+	/*font-family: 'Jura', sans-serif;*/
+	color: white;
+}
+
+body {
+  padding: 10px 20px 10px;
+  margin:0;
+  background: rgba(151, 173, 229, .2);
+  color: #272d3b;
+  /*font-family: 'Manrope', sans-serif;*/
+}
+
+nav {
+  overflow: hidden;
+	background-color: #272d3b; /* Для браузеров, которые не поддерживают градиенты */
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}	
+	
+	/* Style the nav links */
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+nav a:hover {
+  background-color: #0b0d11;
+  color: #b0d9b4; 
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.advantages__item {
+  width: 47%;
+  padding: 120px;
+  margin: 20px;  
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.confidential {
+  background: url("img/confidential.jpeg") no-repeat;
+  background-position: bottom 10px right 20px;
+  background-size: 370px 220px;
+}
+
+.individual {
+  background: url("img/individual.jpeg") no-repeat;
+  background-position: bottom 10px right 20px;
+  background-size: 370px 220px;
+}
+
+.command {
+  background: url("img/command.jpeg") no-repeat;
+  background-position: bottom 10px right 20px;
+  background-size: 370px 220px;
+}
+
+.production {
+  background: url("img/production.jpeg") no-repeat;
+  background-position: bottom 10px right 20px;
+  background-size: 370px 220px;
+}
+
+.advantages__item h3 {
+  vertical-align: middle;
+  background-color: #272d3b;
+  opacity: .9;
+  color: white; 
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.services h2 {
+  vertical-align: middle;
+  background-color: #272d3b;
+  opacity: .9;
+  color: white; 
+  padding: 20px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.services li {
+  list-style-type: none;
+  margin: 10px;
+  margin-bottom: 5px;
+}
+
+.services li:before {
+  content:" ";
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  background: url("img/marker.svg") no-repeat center;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  padding-top: 50px;
+}
+
+.team__item {
+  margin: 50px;
+  width: 20%;
+  height: 150px;
+  align-self: flex-end;
+}
+
+.team h3 {
+  vertical-align: middle;
+  background-color: #272d3b;
+  opacity: .9;
+  color: white; 
+  padding: 20px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.register {
+  background: url("img/register29.svg") no-repeat;
+  background-position: top right;
+  background-size: 100px auto;
+}
+
+.drug {
+  background: url("img/drug29.svg") no-repeat;
+  background-position: bottom right;
+  background-size: 100px auto;
+}
+
+.audit {
+  background: url("img/audit29.svg") no-repeat;
+  background-position: top right;
+  background-size: 100px auto;
+}
+
+.research {
+  background: url("img/research29.svg") no-repeat;
+  background-position: bottom right;
+  background-size: 100px auto;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+	background-color: #272d3b; /* Для браузеров, которые не поддерживают градиенты */
+  color: white; 
+	border-radius: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+  .advantages {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 1390px) {
+  .advantages {
+  background: url("img/pill29.svg") no-repeat;
+  background-position: bottom 120px right 200px;
+  background-size: 770px 620px;
+  }
+}  
+
+@media (min-width: 1000px) and (max-width: 1389px){
+  .advantages {
+  background: url("img/pill29.svg") no-repeat;
+  background-position: right 200px center;
+  background-size: 670px 520px;
+  }
+}  
+
+@media (min-width: 801px) and (max-width: 999px){
+  .advantages {
+  background: url("img/pill29.svg") no-repeat;
+  background-position: center center;
+  background-size: 570px 420px;
+  }
+} 
+
+@media (max-width: 1390px) {
+  .advantages__item {
+  width: 45%;
+  padding: 110px;
+  padding-left: 50px;
+  margin: 10px; 
+  }
+}  
+
+@media (max-width: 800px) {
+  .advantages__item {
+  width: 100%;
+  padding: 100px;
+  padding-left: 50px;
+  margin: 20px 0; 
+  background-position: center center;
+  background-size: 100% auto;
+  }
+}  
+
+@media (max-width: 1300px){
+  .team {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+} 
+
+@media (min-width: 801px) and (max-width: 1300px){
+  .team {
+  }
+}
+
+@media (max-width: 1300px){
+  .team h3{
+  align-self: flex-start;
+  }
+} 
+
+@media (min-width: 801px) and (max-width: 1300px){
+  .team h3{
+  align-self: center;
+  margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 800px){
+  .team h3{
+  align-self: center;
+  margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1300px){
+  .team__item {
+  width: 50%;
+  align-self: center;
+  height: 100px;
+  margin: 10px;
+  }
+} 
+
+@media (max-width: 800px){
+  .team__item {
+  width: 100%;
+  align-self: center;
+  height: 100px;
+  margin: 10px;
+  }
+} 
+
+@media (min-width: 801px) and (max-width: 1300px){
+  .register {
+  background: url("img/register29.svg") no-repeat;
+  background-position: center right;
+  background-size: 100px auto;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1300px){
+  .drug {
+  background: url("img/drug29.svg") no-repeat;
+  background-position: center left;
+  background-size: 100px auto;
+  }
+}
+
+@media (max-width: 800px){
+  .drug {
+  background: url("img/drug29.svg") no-repeat;
+  background-position: center left;
+  background-size: 100px auto;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1300px){
+  .audit {
+  background: url("img/audit29.svg") no-repeat;
+  background-position: center right;
+  background-size: 100px auto;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1300px){
+  .research {
+  background: url("img/research29.svg") no-repeat;
+  background-position: center left;
+  background-size: 100px auto;
+  }
+}
+
+@media (max-width: 800px){
+  .research {
+  background: url("img/research29.svg") no-repeat;
+  background-position: center left;
+  background-size: 100px auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .services {
+  padding-bottom: 50px;
+  margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1301px) {
+  .services {
+  background-image: url("img/drugs.jpeg"), url("img/desinfection.jpeg"), url("img/parfume.jpeg"), url("img/list_bg_green29.svg");
+  background-position: top 626px left 160px, top 380px right 160px, top 140px left 160px, center top 20px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 15% auto, 15% auto, 15% auto, auto auto;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 1300px){
+  .services {
+  background: url("img/services_bg.jpeg") no-repeat;
+  background-position: top 160px right 60px;
+  background-size: 40% auto;
+  }
+} 
+
+
+@media (max-width: 1300px) {
+  .services {
+  padding-top: 0;
+  margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1300px) {
+  .services h2{
+  align-self: flex-start;
+  margin-left: 100px;
+  }
+}
+
+@media (min-width: 1301px) {
+  .services li {
+  padding-left: 25%;
+  max-width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .services h2{
+  margin-left: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+nav a {
+    float: none;
+    width: 100%;
+  }
+ body {font-size: 1.0em;}
+}
+
