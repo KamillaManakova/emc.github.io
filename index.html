@@ -1,80 +1,135 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eurasian Medical Certification</title>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta lang="ru">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="styles.css" rel="stylesheet">
-		<title>Сайт</title>
-	</head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-	<body>
-		<header>
-			<h1>Eurasian Medical Certification</h1>
-			<p>Полное документальное, правовое и научное сопровождение фармацевтической деятельности на территории Республики Казахстан</p>
-		</header>
+</head>
+
+<body>
+
+	<header>
+		<a href="#"><img src="assets/img/logo_w.png" width="100" height=auto></a>
 		<nav>
-		  <a href="#advantages">Преимущества</a>
-      <a href="#team">Команда</a>
-			<a href="#services">Услуги</a>
-			<a href="#contacts" style="float:right">Контакты</a>
+			<li><a href="#services">Услуги</a></li>
+			<li><a href="#advantages">Преимущества</a></li>
+			<li><a href="#team">Команда</a></li>
+			<li><a href="#contacts">Контакты</a></li>
 		</nav>
-    		
-    <div class="advantages" id="advantages">
-      <div class="advantages__item command">      
-        <h3>Работа с командой профессионалов</h3>
-      </div>
-      <div class="advantages__item confidential">
-        <h3>Гарантия конфиденциальности</h3>
-      </div>
-      <div class="advantages__item individual">
-        <h3>Индивидуальный подход</h3>
-      </div>
-      <div class="advantages__item production">      
-        <h3>Прямые контакты с производителями</h3>
-      </div>
+	</header>
+
+
+	<section class="hero">
+		<div class="background-image" style="background-image: url(assets/img/header_bg.jpeg);"></div>
+		<div class="header__caption">
+    <h1>Eurasian Medical Certification</h1>
+		<h3>Квалифицированные решения для фармацевтической отрасли</h3>
     </div>
-    
-    <div class="team" id="team">
-      <h3>Наши сотрудники имеют многолетний опыт:</h3>
-      <div class="team__item register">      
-        <p>Регистрации медицинских изделий и лекарственных средств</p>
-      </div>
-      <div class="team__item drug">      
-        <p>Разработки фармацевтических продуктов в США</p>
-      </div>
-      <div class="team__item audit">      
-        <p>Инспекционных аудитов в США, Южной Корее, Канаде, Китае</p>
-      </div>
-      <div class="team__item research">      
-        <p>Сотрудничества с мировыми национальными центрами по исследованию фармацевтических разработок</p>
-      </div>
-    </div>    
-    
-    <div class="services" id="services">
-      <h2>Перечень услуг</h2>
-        <ul>
-          <li>Регистрация медицинских изделий (МИ)</li>
-          <li>Регистрация лекарственных средств (ЛС)</li>
-          <li>Регистрация дезинфицирующих средств</li>
-          <li>Регистрация БАД</li>
-          <li>Регистрация парфюмерно-косметической продукции</li>
-          <li>Определение на принадлежность МИ</li>
-          <li>Разрешение на разовый ввоз ЛС и МИ</li>
-          <li>Лицензирование медицинской и фармацевтической деятельности</li>
-          <li>Получение разрешительных документов на реализацию зарегистрированных ЛС и МИ (Заключение о безопасности и качества)</li>
-          <li>Услуги по  внедрению GxP практик</li>
-          <li>Услуги по внедрению ISO 13485</li>
-          <li>Документальное, правовое, научное сопровождение всех видов фармацевтических проектов под ключ</li>
-        </ul>
-    </div>
-		
-		<footer class="footer" id="contacts">
-		Наши контакты:
-		</footer>
-		
-	</body>
+		<!--<a href="http://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox/" class="btn">Download it Here</a>-->
+	</section>
+
+
+	<section class="our-work" id="services">
+		<h3 class="title">Наши услуги</h3>
+		<p>Мы предоставляем полное документальное, правовое и научное сопровождение фармацевтической деятельности на территории Республики Казахстан.</p>
+		<hr>
+
+		<ul class="grid services">
+			<li class="small" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/1.jpeg);"><p>Регистрация лекарственных средств (ЛС)</p></li>
+			<li class="large" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/2.jpeg);"><p>Регистрация БАД</p></li>
+			<li class="large" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/balloon.jpg);"><p>Регистрация дезинфицирующих средств</p></li>
+			<li class="small" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/4.jpeg);"><p>Регистрация медицинских изделий (МИ)</p></li>
+      <li class="small" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/5.jpeg);"><p>Регистрация парфюмерно-косметической продукции</p></li>
+			<li class="large" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/6.jpeg);"><p>Определение на принадлежность МИ</p></li>
+			<li class="large" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/7.jpeg);"><p>Разрешение на разовый ввоз ЛС и МИ</p></li>
+			<li class="small" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/8.jpg);"><p>Лицензирование медицинской и фармацевтической деятельности</p></li>
+      <li class="small" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/9.jpeg);"><p>Услуги по  внедрению GxP практик</p></li>
+      <li class="large" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/10.jpg);"><p>Получение разрешительных документов на реализацию зарегистрированных ЛС и МИ (Заключение о безопасности и качества)</p></li>
+			<li class="large" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/11.jpg);"><p>Документальное, правовое, научное сопровождение всех видов фармацевтических проектов под ключ</p></li>
+			<li class="small" style="background-image: linear-gradient(rgba(1,61,113,0.5), rgba(1,61,113,0.5)), url(assets/img/12.jpeg);"><p>Услуги по внедрению ISO 13485</p></li>
+		</div>
+	</section>
 	
+
+	<section class="features" id="advantages">
+		<h3 class="title">Наши преимущества</h3>
+		<p>Сопровождая фармацевтическую деятельность Вашей компаний под ключ, мы гарантируем конфиденциальность, а также доступные и конкурентоспособные цены.</p>
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<i class="fa fa-user-md"></i>
+				<h4>Работа с командой профессионалов</h4>
+				<p>Наши сотрудники - дипломированные специалисты с многолетним опытом работы на фармацевтических предприятиях.</p>
+			</li>
+			<li>
+				<i class="fa fa-weixin"></i>
+				<h4>Индивидуальный подход</h4>
+				<p>Мы учитываем пожелания клиента и рассматриваем дополнительные условия сотрудничества в зависимости от поставленных задач.</p>
+			</li>
+			<li>
+				<i class="fa  fa-medkit"></i>
+				<h4>Прямые контакты с производителями</h4>
+				<p>Наши поставщики предоставляют ЛС и МИ высокого качества,которое соответствует мировым стандартам и нормам.</p>
+			</li>
+		</div>
+	</section>
+
+
+	<section class="reviews" id="team">
+		<h3 class="title">Команда EMC</h3>
+    
+    <i class="fa  fa-book"></i>
+		<p class="author">— профильное образование —</p>
+		<p class="quote">Наши сотрудники имеют степени: <br>Кандидат юридических наук, LL.M., DBA; <br>PhD Технология фармацевтического производства, <br>MD Менеджер в здравоохранении.</p>
+		
+    <i class="fa  fa-flask"></i>
+    <p class="author">— многолетний стаж —</p>
+		<p class="quote">Мы понимаем, как работают фармацевтические предприятиия и разбираемся в практических вопросах регистрации МИ и ЛС.</p>
+
+		<i class="fa  fa-rocket"></i>
+		<p class="author">— зарубежные проекты —</p>
+		<p class="quote">Мы принимали участие в разработках фармацевтических продуктов в США и проводили инспекционные аудиты в США, Южной Корее, Канаде и Китае.</p>
+
+		
+	</section>
+
+<!--
+	<section class="contact">
+		<h3 class="title">Join our newsletter</h3>	
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<hr>
+
+		<form>
+			<input type="email" placeholder="Email">
+			<a href="#" class="btn">Subscribe now</a>
+		</form>
+	</section>
+-->
+	<footer id="contacts">
+		<ul>
+			<!--<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>-->
+			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram-square"></i></a></li>
+			<!--<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-github-square""></i></a></li>-->
+		</ul>
+    <p>&#169; Eurasian Medical Certification, 2020.</p>
+		<p>Тел.:<a href="tel:+7012140105">+701-214-0105</a></p>
+    <p>E-mail: <a href="mailto:askar.kaldybayev@gmail.com">askar.kaldybayev@gmail.com</a>.</p>
+		<p>Адрес: г. Нур-Султан, ул. Сыганак, дом. 10/2, офис 308.</p>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad4a1f0d97a58d85c6697647359afb2ede1f319e8665376f2264a2d7e3b5a589e&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+	</footer>
+
+</body>
+
 </html>
 
